@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+const base = import.meta.env.BASE_URL || '/';
 
 // --- DATA PENGHARGAAN ---
 const awards = ref([
@@ -55,16 +56,16 @@ const handleImageError = (event) => {
 <template>
     <section class="bg-white py-16 sm:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight">
-                    AWARDS
+            <div class="mb-12" data-aos="fade-down">
+                <h2 class="text-black text-4xl sm:text-5xl font-extrabold mb-2">
+                    Awards
                 </h2>
-                <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">
-                    Penghargaan profesional yang telah saya capai selama berkarir.
+                <div class="w-20 h-1 bg-yellow-500 rounded mb-4"></div>
+                <p class="text-gray-400 max-w-2xl text-base">
+                    Dive deep into the core concepts of modern web development. Our YouTube library serves as an extension of our professional practice, offering structured tutorials on vital technologies.
                 </p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="zoom-in">
                 
                 <div 
                     v-for="(award, index) in awards" 

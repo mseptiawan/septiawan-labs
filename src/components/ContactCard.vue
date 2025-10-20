@@ -38,37 +38,38 @@ onMounted(() => {
             We're happy to help you.
           </p>
 
-          <div
-            class="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4"
-            data-aos="zoom-in"
-          >
-            <!-- TOMBOL WHATSAPP -->
-            <a
-              href="https://wa.me/6281234567890"
-              target="_blank"
-              class="bg-[#6EB3FC] !text-white font-semibold rounded-full py-3 px-6 flex items-center justify-between w-full sm:w-auto gap-4 transition-transform hover:scale-105"
-            >
-              <img
-                src="/images/whatsapp.png"
-                alt="WhatsApp"
-                class="w-6 h-6"
-              />
-              <span>WhatsApp</span>
-            </a>
+        <div
+  class="mt-8 flex flex-col sm:flex-row items-center sm:items-stretch justify-center md:justify-start gap-4 px-4 sm:px-0"
+  data-aos="zoom-in"
+>
+  <!-- TOMBOL WHATSAPP -->
+  <a
+    href="https://wa.me/6281234567890"
+    target="_blank"
+    class="bg-[#6EB3FC] text-white font-semibold rounded-full py-3 px-6 flex items-center justify-center sm:justify-between w-full sm:w-auto gap-3 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+  >
+    <img
+      src="/images/whatsapp.png"
+      alt="WhatsApp"
+      class="w-6 h-6 flex-shrink-0"
+    />
+    <span class="text-center">WhatsApp</span>
+  </a>
 
-            <!-- TOMBOL EMAIL -->
-            <a
-              href="mailto:mseptiawan017@gmail.com"
-              class="bg-[#6EB3FC] !text-white font-semibold rounded-full py-3 px-6 flex items-center justify-between w-full sm:w-auto gap-4 transition-transform hover:scale-105"
-            >
-              <img
-                src="/images/communication.png"
-                alt="Email"
-                class="w-6 h-6"
-              />
-              <span>Email</span>
-            </a>
-          </div>
+  <!-- TOMBOL EMAIL -->
+  <a
+    href="mailto:mseptiawan017@gmail.com"
+    class="bg-[#6EB3FC] text-white font-semibold rounded-full py-3 px-6 flex items-center justify-center sm:justify-between w-full sm:w-auto gap-3 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+  >
+    <img
+      src="/images/communication.png"
+      alt="Email"
+      class="w-6 h-6 flex-shrink-0"
+    />
+    <span class="text-center">Email</span>
+  </a>
+</div>
+
         </div>
 
         <!-- KANAN (Bisa ditambah ilustrasi atau dibiarkan kosong) -->
