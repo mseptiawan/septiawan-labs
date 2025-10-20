@@ -8,9 +8,9 @@ const awards = ref([
         title: 'UI UX DESIGN',
         description: 'Juara 1 UI UX Design di Event RAFATECH yang diselenggarakan UIN Raden Fatah Palembang.',
         images: [
-            '/images/awards/ui1.jpeg',
-            '/images/awards/ui2.jpeg',
-            '/images/awards/ui3.jpeg',
+            `${base}images/awards/ui1.jpeg`,
+            `${base}images/awards/ui2.jpeg`,
+            `${base}images/awards/ui3.jpeg`,
         ],
         projectLink: '#'
     },
@@ -19,8 +19,8 @@ const awards = ref([
         title: 'Finalis Lomba Web Development',
         description: 'Masuk Finalis Website Development dalam event tahunan RAFATECH yang diselenggarakan UIN Raden Fatah Palembang.',
         images: [
-            '/images/awards/finalis.png',
-            '/images/awards/jasa.png',
+            `${base}images/awards/finalis.png`,
+            `${base}images/awards/jasa.png`,
         ],
         projectLink: '#'
     },

@@ -58,23 +58,24 @@
 import { ref, onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+const base = import.meta.env.BASE_URL || '/';
 
 // Data Layanan
 const services = ref([
   {
     title: 'UI / UX Design',
     description: 'We design interfaces that are intuitive, functional, and emotionally engaging to elevate your digital presence.',
-    image: '/images/ui.png'
+    image: `${base}images/ui.png`
   },
   {
     title: 'Web Development',
     description: 'From concept to launch, we build fast, secure, and scalable web applications using the latest technologies.',
-    image: '/images/websitedevelopment.png'
+    image: `${base}images/websitedevelopment.png`
   },
   {
     title: 'Consultation',
     description: 'We provide professional consulting to help businesses navigate digital transformation effectively.',
-    image: '/images/konsultasi.png'
+    image: `${base}images/konsultasi.png`
   },
 ])
 

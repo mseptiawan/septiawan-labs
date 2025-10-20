@@ -82,6 +82,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { onMounted, ref } from 'vue';
+const base = import.meta.env.BASE_URL || '/';
+
 // 1. Vue Refs dan State
 // Catatan: Nama ref diubah dari cardsContainer menjadi galleryContainer agar sesuai dengan script baru.
 const galleryContainer = ref(null);
@@ -98,22 +100,22 @@ const projects = ref([
     title: 'E-commerceCall',
     subtitle: 'Web solusi layanan lokal untuk para freelancer, orang bisa pesan jasa seperti custom rom, service ac bahkan jasa coding',
     previewClass: 'bg-yellow-600',
-    image: "/images/jasa.png",
+    image: `${base}images/jasa.png`,
     link: '#',
   },
   {
     title: 'Blog',
     subtitle: 'Dikembangkan dengan teknologi react, intertia dan laravel',
     previewClass: 'bg-blue-600',
-    image: "/images/pemenangkarir.png",
+    image: `${base}images/pemenangkarir.png`,
 
     link: '#',
-    
+
   },
   {
     title: 'Sistem Insentif Promotor',
     subtitle: 'Dikembangkan khusus promotor changhong sebagai study kasus kerja praktik',
-    image: "/images/insentif.png",
+    image: `${base}images/insentif.png`,
     previewClass: 'bg-orange-600',
     link: '#',
   },

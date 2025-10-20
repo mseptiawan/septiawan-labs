@@ -13,8 +13,5 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'),
         },
     },
-    base:
-        process.env.NODE_ENV === 'production'
-            ? '/septiawan-labs/' // buat GitHub Pages
-            : '/', // buat lokal
+    base: '/septiawan-labs/',
 });

@@ -3,7 +3,7 @@ import { onMounted } from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ref } from 'vue';
-
+const base = import.meta.env.BASE_URL || '/';
 onMounted(() => {
   AOS.init({
     duration: 900,
@@ -19,15 +19,15 @@ const expertise = ref([
     {
         name: 'Vue.js',
         // Path gambar ini mengasumsikan file ada di folder public/images/
-        iconSrc: '/images/vue.png' 
+        iconSrc: `${base}images/vue.png`
     },
     {
         name: 'Python',
-        iconSrc: '/images/python.png'
+        iconSrc: `${base}images/python.png`
     },
     {
         name: 'Flask',
-        iconSrc: '/images/Flask.png'
+        iconSrc: `${base}images/Flask.png`
     },
 ]);
 </script>
