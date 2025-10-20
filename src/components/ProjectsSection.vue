@@ -108,6 +108,7 @@ const projects = ref([
     image: "/images/pemenangkarir.png",
 
     link: '#',
+    
   },
   {
     title: 'Sistem Insentif Promotor',

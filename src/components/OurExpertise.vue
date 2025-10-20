@@ -1,8 +1,8 @@
 <script setup>
-import { onMounted } from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
+const base = import.meta.env.BASE_URL
 
 onMounted(() => {
   AOS.init({
@@ -16,20 +16,10 @@ onMounted(() => {
 // --- DATA KEAHLIAN ---
 // Data disederhanakan dan diubah untuk menggunakan path gambar
 const expertise = ref([
-    {
-        name: 'Vue.js',
-        // Path gambar ini mengasumsikan file ada di folder public/images/
-        iconSrc: '/images/vue.png' 
-    },
-    {
-        name: 'Python',
-        iconSrc: '/images/python.png'
-    },
-    {
-        name: 'Flask',
-        iconSrc: '/images/Flask.png'
-    },
-]);
+  { name: 'Vue.js', iconSrc: `${base}images/vue.png` },
+  { name: 'Python', iconSrc: `${base}images/python.png` },
+  { name: 'Flask', iconSrc: `${base}images/Flask.png` },
+])
 </script>
 
 <template>
