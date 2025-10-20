@@ -58,7 +58,10 @@
 import { ref, onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const base =
+  import.meta.env.MODE === 'development'
+    ? '/'
+    : import.meta.env.BASE_URL.replace(/\/+$/, '');
 
 
 // Data Layanan

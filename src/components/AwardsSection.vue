@@ -1,6 +1,10 @@
 <script setup>
 import { ref } from 'vue';
-const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const base =
+  import.meta.env.MODE === 'development'
+    ? '/'
+    : import.meta.env.BASE_URL.replace(/\/+$/, '');
+
 
 
 // --- DATA PENGHARGAAN ---

@@ -82,7 +82,10 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { onMounted, ref } from 'vue';
-const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const base =
+  import.meta.env.MODE === 'development'
+    ? '/'
+    : import.meta.env.BASE_URL.replace(/\/+$/, '');
 
 
 // 1. Vue Refs dan State
