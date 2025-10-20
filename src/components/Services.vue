@@ -58,7 +58,8 @@
 import { ref, onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-const base = import.meta.env.BASE_URL || '/';
+const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+
 
 // Data Layanan
 const services = ref([

@@ -3,7 +3,8 @@ import { onMounted, ref } from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const base = import.meta.env.BASE_URL || '/';
+const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+
 
 onMounted(() => {
   AOS.init({

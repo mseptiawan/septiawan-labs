@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-const base = import.meta.env.BASE_URL || '/';
+const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+
 
 // --- DATA PENGHARGAAN ---
 const awards = ref([
